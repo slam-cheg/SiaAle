@@ -116,7 +116,7 @@
   justify-content: space-between;
   width: 100%;
   max-height: 0;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.3s ease-in-out;
   overflow: hidden;
 }
 .header__hiddenpart_opened {
@@ -192,4 +192,22 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.page-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.page-blur_opened {
+  opacity: 1;
+  visibility: visible;
 }

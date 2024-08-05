@@ -1,6 +1,7 @@
 const header = document.querySelector("header");
 const navLinks = header.querySelectorAll(".header__menu-item");
 const hiddenPart = header.querySelector(".header__hiddenpart");
+const pageBlur = document.querySelector(".page-blur");
 
 // Add event listeners to nav links
 navLinks.forEach((link) => {
@@ -12,9 +13,12 @@ navLinks.forEach((link) => {
 function openMenu(event) {
 	hiddenPart.classList.add("header__hiddenpart_opened");
 	hiddenPart.addEventListener("mouseleave", closeMenu);
+    pageBlur.classList.add("page-blur_opened");
+    
 }
 
 function closeMenu(event) {
 	hiddenPart.classList.remove("header__hiddenpart_opened");
 	hiddenPart.removeEventListener("mouseleave", closeMenu);
+    pageBlur.classList.remove("page-blur_opened");
 }
