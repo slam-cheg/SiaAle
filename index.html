@@ -32,28 +32,17 @@
 						</div>
 					</div>
 					<menu class="header__menu">
-						<nav class="header__menu-item" id="collections"><a href="#" class="header__menu-link">Коллекции</a></nav>
-						<div class="header__menu-separator"></div>
 						<nav class="header__menu-item"><a href="#" class="header__menu-link">Философия&nbsp;Sia&nbsp;Ale</a></nav>
+						<div class="header__menu-separator"></div>
+						<nav class="header__menu-item" id="collections"><a href="#" class="header__menu-link">Коллекции</a></nav>
 						<div class="header__menu-separator"></div>
 						<nav class="header__menu-item" id="recomendations"><a href="#" class="header__menu-link">Рекомендации&nbsp;по&nbsp;уходу</a></nav>
 						<div class="header__menu-separator"></div>
-						<!-- <nav class="header__menu-item"><a href="#" class="header__menu-link"></a></nav>
-						 						<div class="header__menu-separator"></div>
-						<nav class="header__menu-item"><a href="#" class="header__menu-link"></a></nav> 
-												<div class="header__menu-separator"></div>-->
-						<nav class="header__menu-item"><a href="#" class="header__menu-link">campain</a></nav>
-						<div class="header__menu-separator"></div>
 						<nav class="header__menu-item"><a href="#" class="header__menu-link">подарочные&nbsp;сертификаты</a></nav>
 						<div class="header__menu-separator"></div>
-						<!-- <nav class="header__menu-item"><a href="#" class="header__menu-link">Доставка&nbsp;и&nbsp;оплата</a></nav>
-						 						<div class="header__menu-separator"></div>
-						<nav class="header__menu-item"><a href="#" class="header__menu-link">Обмен&nbsp;и&nbsp;возврат</a></nav>
-												<div class="header__menu-separator"></div>
-						<nav class="header__menu-item"><a href="#" class="header__menu-link">Гид&nbsp;по&nbsp;размерам</a></nav> 
-												<div class="header__menu-separator"></div>-->
-
 						<nav class="header__menu-item" id="information"><a href="#" class="header__menu-link">Информация</a></nav>
+						<div class="header__menu-separator"></div>
+						<nav class="header__menu-item"><a href="#" class="header__menu-link">Campaign</a></nav>
 						<div class="header__menu-separator"></div>
 						<nav class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></nav>
 					</menu>
@@ -124,9 +113,6 @@
 									<nav class="header__hiddenmenu-item"><a href="#" class="header__menu-link">Доставка&nbsp;и&nbsp;оплата</a></nav>
 									<nav class="header__hiddenmenu-item"><a href="#" class="header__menu-link">Обмен&nbsp;и&nbsp;возврат</a></nav>
 									<nav class="header__hiddenmenu-item"><a href="#" class="header__menu-link">Гид&nbsp;по&nbsp;размерам</a></nav>
-									<!-- <nav class="header__hiddenmenu-item"><a href="#" class="header__menu-link">home</a></nav>
-									<nav class="header__hiddenmenu-item"><a href="#" class="header__menu-link">last chance</a></nav>
-									<nav class="header__hiddenmenu-item"><a href="#" class="header__menu-link">archive</a></nav> -->
 								</menu>
 							</div>
 							<!-- <div class="column">
@@ -164,6 +150,7 @@
 				</div>
 			</div>
 			<ul class="header__mobile-menu">
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Философия&nbsp;Sia&nbsp;Ale</a></li>
 				<li class="header__menu-item header__menu-item_additional" id="collections">
 					<a href="#" class="header__menu-link">Коллекции</a>
 					<ul>
@@ -175,7 +162,6 @@
 						<li><a href="#" class="header__menu-link">archive</a></li>
 					</ul>
 				</li>
-				<li class="header__menu-item"><a href="#" class="header__menu-link">Философия&nbsp;Sia&nbsp;Ale</a></li>
 				<li class="header__menu-item header__menu-item_additional" id="recomendations">
 					<a href="#" class="header__menu-link">Рекомендации&nbsp;по&nbsp;уходу</a>
 					<ul>
@@ -184,7 +170,6 @@
 						<li><a href="#" class="header__menu-link">Нижнее&nbsp;бельё</a></li>
 					</ul>
 				</li>
-				<li class="header__menu-item"><a href="#" class="header__menu-link">campain</a></li>
 				<li class="header__menu-item"><a href="#" class="header__menu-link">подарочные&nbsp;сертификаты</a></li>
 				<li class="header__menu-item header__menu-item_additional" id="information">
 					<a href="#" class="header__menu-link">Информация</a>
@@ -194,6 +179,7 @@
 						<li><a href="#" class="header__menu-link">Гид&nbsp;по&nbsp;размерам</a></li>
 					</ul>
 				</li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Campaign</a></li>
 				<li class="header__menu-item"><a href="#" class="header__menu-link">Контакты</a></li>
 			</ul>
 			<div class="header__languages">
@@ -203,7 +189,11 @@
 			</div>
 		</div>
 		<main class="main">
-			<img loading="lazy" class="image" src="./images/IMG_8865.JPG" alt="" />
+			<picture class="main__image">
+				<source id="main-img-desktop" media="(min-width: 960px)" srcset="./images/IMG_8865.JPG" />
+				<source id="main-img-mobile" media="(max-width: 959px)" srcset="./images/IMG_8866.JPG" />
+				<img id="main-img-desktop-additional" class="image" src="./images/IMG_8865.JPG" alt="Desktop Image" />
+			</picture>
 		</main>
 		<div class="page-blur"></div>
 		<script src="./index.js"></script>

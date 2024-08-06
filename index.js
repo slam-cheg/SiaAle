@@ -1,11 +1,24 @@
 const header = document.querySelector("header");
+const headerLogo = header.querySelector(".header__logo");
 const navLinks = header.querySelectorAll(".header__menu-item");
 const hiddenParts = header.querySelectorAll(".header__hiddenpart");
 const pageBlur = document.querySelector(".page-blur");
 const burger = header.querySelector(".header__burger");
 const burgerMenu = document.querySelector(".header__mobile");
 const closeBurger = burgerMenu.querySelector(".header__mobile-close");
+const main = document.querySelector("main");
+const mainImage = main.querySelector(".main__image");
+const imageDesktop = mainImage.querySelector("#main-img-desktop");
+const imageMobile = mainImage.querySelector("#main-img-mobile");
+const imageDesktopAdditional = mainImage.querySelector("#main-img-desktop-additional");
+//const ImageDesktopSource = document.querySelector(".main-image-desktop").querySelector("img").dataset.original;
+//const ImageMobileSource = document.querySelector(".main-image-mobile").querySelector("img").dataset.original;
+//const logoHeaderSource = document.querySelector(".header-logo-shoko").querySelector("img").dataset.original;
 
+//imageDesktop.srcset = ImageDesktopSource
+//imageMobile.srcset = ImageMobileSource
+//imageDesktopAdditional.src = imageDesktop.srcset;
+//headerLogo.src = logoHeaderSource;
 
 burger.addEventListener("click", openBurgerMenu);
 closeBurger.addEventListener("click", closeBurgerMenu);
